@@ -1,15 +1,3 @@
-<?php
-$site_data      = json_decode(file_get_contents('http://templates.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
-
-$phone_name     = $site_data['phone_name'];
-$phone_href     = $site_data['phone_href'];
-
-$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Entrumpelung'));
-$city           = str_replace('+', ' ', trim($_GET['n'] ?? 'in der nahe'));
-
-$title = $text . ' ' . $city;
-?>
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -18,10 +6,7 @@ $title = $text . ' ' . $city;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <?= $site_data['html'] ?>
-    <title>
-        <?= $title ?>
-    </title>
+    <title>Seo Title</title>
 </head>
 
 <body>
@@ -65,12 +50,12 @@ $title = $text . ' ' . $city;
         
         <section class='btnFixedD'>
             <div class='btnFixedD__box'>
-                <a class="btnFixedD__btn" href="<?= $phone_href ?>" ><img class="btnFixedD__img" src="assets/icons/telephone-fill.svg" alt=""></a>
+                <a class="btnFixedD__btn" href="tel:+111222333" ><img class="btnFixedD__img" src="./assets/icons/telephone-fill.svg" alt=""></a>
             </div>
         </section>
         <section class='btnFixed'>
             <div class='btnFixed__box'>
-                <a class="btnFixed__btn" href="<?= $phone_href ?>" ><span>111222333</span></a>
+                <a class="btnFixed__btn" href="tel:+111222333" ><span>111222333</span></a>
             </div>
         </section>
     </main>
