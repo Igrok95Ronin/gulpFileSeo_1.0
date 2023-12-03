@@ -43,3 +43,26 @@
 .btnFixedD__img{
     width: 100%;
 }
+
+/* Кнопка вызова формы */
+.loadTheFormFixed {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+
+.loadTheFormFixed__box {
+}
+
+.loadTheFormFixed__btn {
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 50px;
+    width: 38px;
+    height: 38px;
+    border: 0px;
+}
+
+.loadTheFormFixed__img {
+    width: 100%;
+}
